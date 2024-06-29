@@ -1,0 +1,26 @@
+.dashboard2 {
+  padding: 20px;
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #34495e;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+

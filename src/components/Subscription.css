@@ -1,0 +1,87 @@
+.pricing-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.current-plan-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h2 {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: -20px -20px 20px;
+  padding: 20px;
+}
+
+.plan .price {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.plan .price span {
+  font-size: 14px;
+  color: #888;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.plan ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.plan ul li:last-child {
+  border-bottom: none;
+}
+
+.plan ul li.disabled {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.plan .choose-plan {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan .choose-plan:hover {
+  background-color: #003366d9;
+}
+
+.plan.basic {
+  border-top: 5px solid #003366;
+}
+
+.plan.advance {
+  border-top: 5px solid #28a745;
+}
+
+.plan.premium {
+  border-top: 5px solid #ffc107;
+}

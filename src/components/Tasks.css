@@ -1,0 +1,90 @@
+  .tasks-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tasks {
+    padding: 20px;
+    background-color: #003366; 
+    min-height: 100vh;
+    color: #ffffff;
+    flex: 2;
+  }
+  
+  .tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  
+  .progress-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .progress {
+    font-size: 16px;
+    color: #003366; 
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-info h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .task-info p {
+    margin: 0 0 5px;
+  }
+  
+  .language {
+    color: #3498db; 
+  }
+  
+  .levels-count {
+    color: #e74c3c; 
+  }
+  
+  .view-button {
+    padding: 10px 20px;
+    background-color: #003366; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .view-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .view-button:hover:not(:disabled) {
+    background-color: #002244;
+  }
+  
+
+
+
+  

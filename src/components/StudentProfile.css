@@ -1,0 +1,24 @@
+.student-profile {
+  max-width: 800px;
+  margin-top: 150px; 
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-profile h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .student-profile p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 10px 0;
+  }
+  

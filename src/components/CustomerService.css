@@ -1,0 +1,72 @@
+   .service-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .customer-service {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .customer-service form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .why-choose-us {
+    margin-top: 40px;
+  }
+  
+  .why-choose-us-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .why-choose-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .why-choose-us-text {
+    margin-left: 20px;
+  }
+  

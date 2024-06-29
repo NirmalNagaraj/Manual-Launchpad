@@ -1,0 +1,116 @@
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  color: #333;
+  border-radius: 8px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-and-notification {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-picker {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.notification-box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.notification-box h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #2196f3;
+}
+
+.notification-box p {
+  margin: 0;
+  color: #666;
+}
+
+.progress-bars {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 150px;
+  text-align: center;
+}
+
+.level-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.level-box {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.event-box,
+.empty-box,
+.task-list,
+.recent-activity,
+.tips-and-tricks {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.task-list ul,
+.recent-activity ul,
+.tips-and-tricks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li,
+.recent-activity li,
+.tips-and-tricks li {
+  margin-bottom: 5px;
+}
