@@ -169,7 +169,7 @@ body {
     background-color: var(--secondary-light);
 }
 
-/* Keyframes for fade-in animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -194,5 +194,19 @@ body {
     font-size: 1rem;
     font-weight: 400;
     color: var(--secondary);
+  }
+  .feedback-button {
+    border: 2px solid darkblue;
+    background-color: white;
+    color: darkblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .feedback-button:hover{
+    color: white;
   }
   

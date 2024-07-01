@@ -1,4 +1,3 @@
-/* src/components/SideMenu.css */
 .sidebar {
     position: fixed;
     top: 0;
@@ -12,9 +11,9 @@
     padding: 20px 20px 20px 20px;
     transition: 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;  /* Add scrollbar */
-    z-index: 999;  /* Ensure sidebar is above other elements */
-    padding-top: 60px; /* Add top padding to avoid overlap with toggle button */
+    overflow-y: auto;  
+    z-index: 999;  
+    padding-top: 60px;
 }
 
 .sidebar.open {
@@ -39,7 +38,7 @@
 
 .icon {
     margin-right: 10px;
-    color: #1f1a1a;  /* Icon color to match theme */
+    color: #1f1a1a; 
 }
 
 .toggle-button {
@@ -54,18 +53,18 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Customize scrollbar */
+
 .sidebar::-webkit-scrollbar {
     width: 8px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: rgba(253, 253, 253, 0.744);  /* Scrollbar color */
+    background: rgba(253, 253, 253, 0.744);  
     border-radius: 4px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background: rgb(208, 206, 206);  /* Scrollbar hover color */
+    background: rgb(208, 206, 206);  
 }
 
 .sidebar::-webkit-scrollbar-track {

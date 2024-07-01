@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaBell, FaBox, FaCalendar, FaTimes, FaTachometerAlt, FaTasks, FaFileAlt, FaRobot, FaHandsHelping, FaUsers, FaCalendarAlt, FaDollarSign, FaCog } from 'react-icons/fa';
+import { FaBars, FaBell, FaBox, FaCalendar, FaTimes, FaMoneyBillWave , FaTachometerAlt, FaTasks, FaFileAlt, FaRobot, FaHandsHelping, FaUsers, FaCalendarAlt, FaDollarSign, FaCog } from 'react-icons/fa';
 import './SideMenu.css';
 
 const SideMenu = () => {
@@ -47,7 +48,7 @@ const SideMenu = () => {
           <FaTachometerAlt className="icon" /> Admin Dashboard
         </Link>
         <Link to="/funding" className="sidebar-item" onClick={toggleSidebar}>
-          <FaTachometerAlt className="icon" /> Admin Dashboard
+          <FaMoneyBillWave className="icon" /> Funding
         </Link>
       </div>
     </>

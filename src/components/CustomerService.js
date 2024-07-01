@@ -1,79 +1,15 @@
+
+
 import React, { useState } from 'react';
 import './CustomerService.css';
-import appDevImage from '../assets/appdevelopment.jpg';
-import webDevImage from '../assets/webdevelopment.png';
-import digitalMarketingImage from '../assets/digitalmarketing.png';
-import graphic from '../assets/graphicdesigning.jpg';
-import training from '../assets/trainingprogram.jpg';
-import internship from '../assets/internshipprogram.jpg';
-import whyus from '../assets/whyus.jpg';
+import dummyImage from '../assets/appdevelopment.jpg';
 
-const Service = ({ image, title, description }) => {
+const CustomerServiceContent = ({ image, title, description }) => {
   return (
     <div className="service-card">
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-    </div>
-  );
-};
-
-const Services = () => {
-  return (
-    <div className="services">
-      <section className="services-section">
-        <h2>Our Services</h2>
-        <div className="service-cards">
-          <Service
-            image={appDevImage}
-            title="App Development"
-            description="Crafting user-friendly mobile applications tailored to your needs, ensuring seamless functionality and engaging user experiences."
-          />
-          <Service
-            image={webDevImage}
-            title="Web Development"
-            description="Building responsive, dynamic websites with cutting-edge technologies, ensuring optimal performance and user engagement."
-          />
-          <Service
-            image={digitalMarketingImage}
-            title="Digital Marketing"
-            description="Driving brand visibility and customer engagement through strategic online campaigns and targeted marketing strategies."
-          />
-          <Service
-            image={graphic}
-            title="Graphic Designing"
-            description="Creating visually stunning graphics for your brand, ensuring a strong visual identity and memorable impact."
-          />
-          <Service
-            image={training}
-            title="Training Program"
-            description="Providing comprehensive training programs to enhance your skills and knowledge in various domains."
-          />
-          <Service
-            image={internship}
-            title="Internship Program"
-            description="Offering valuable internship opportunities to gain practical experience and advance your career."
-          />
-        </div>
-      </section>
-      <section className="why-choose-us">
-        <div className="container">
-          <h2>Why Choose Us</h2>
-          <div className="why-choose-us-content">
-            <img src={whyus} alt="Why Choose Us" />
-            <div className="why-choose-us-text">
-              <p>
-                At Altruisty, we specialize in turning your app ideas into reality. Crafting user-friendly
-                mobile applications tailored to your needs, ensuring seamless functionality and engaging
-                user experiences.
-              </p>
-              <p>
-                Discover why we're the best choice for your next project.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
@@ -88,16 +24,44 @@ const CustomerService = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to the backend
     console.log({ name, email, phone, location, service, message });
     alert('Your message has been sent!');
   };
 
   return (
     <div className="customer-service-container">
-      <Services />
       <div className="customer-service">
         <h2>Contact Customer Service</h2>
+        
+        <div className="why-choose-us">
+          <h3>Why Choose Us?</h3>
+          <div className="why-choose-us-content">
+            <p className="why-choose-us-text">
+              We are committed to providing top-notch customer support and personalized solutions.
+              Our team is dedicated to ensuring your satisfaction with timely responses and
+              comprehensive assistance. Discover our range of services designed to meet your needs!
+            </p>
+          </div>
+        </div>
+
+        <div className="service-cards">
+          <CustomerServiceContent
+            image={dummyImage}
+            title="Dedicated Support"
+            description="Our customer service team is available 24/7 to assist you with any inquiries or issues you may have. We prioritize your satisfaction and are here to help."
+          />
+          <CustomerServiceContent
+            image={dummyImage}
+            title="Quick Response"
+            description="We ensure a rapid response to your queries, minimizing wait times and providing effective solutions promptly."
+          />
+          <CustomerServiceContent
+            image={dummyImage}
+            title="Comprehensive Solutions"
+            description="Our team offers a range of solutions tailored to meet your needs, ensuring you receive the best possible support."
+          />
+        </div>
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>

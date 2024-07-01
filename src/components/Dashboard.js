@@ -21,25 +21,55 @@ function Dashboard({ tasks = [] }) {
   const nextLevel = nextLevelIndex < tasks.length ? tasks[nextLevelIndex] : { title: "None" };
 
   const upcomingTasks = tasks.filter(task => !task.completed).slice(0, 5);
-  const recentActivity = tasks.filter(task => task.completed).slice(-5).reverse();
 
   return (
     <div className="dashboard">
       <header className="dashboard-header">
-        <div className="date-and-notification">
-          <div className="date-picker">
-            <Calendar />
+        <div className="top-boxes">
+          <div className="meeting-details">
+            <h3>Meeting Details</h3>
+            <p>No upcoming meetings</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            
           </div>
+          <div className="subscription-details">
+            <h3>Subscription Details</h3>
+            <p>No active subscriptions</p>
+          </div>
+          <div className="additional-box">
+            <h3>Upcoming tasks</h3>
+            <p>Details here</p>
+            
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+          </div>
+          <div className="additional-box">
+            <h3>Pending tasks</h3>
+            <p>Details here</p>
+          </div>
+        </div>
+        <div className="date-and-notification">
           <div className="notification-box">
             <h3>Notifications</h3>
-            <p>No new meetings</p>
+            <p>No new notifications</p>
+          </div>
+          <div className="date-picker">
+            <Calendar />
           </div>
         </div>
       </header>
 
       <div className="progress-bars">
+        {/* Progress bar sections */}
         <div className="progress-bar">
-          <h3>Total no of Stages</h3>
+          <h3>Total <br/>Stages</h3>
           <CircularProgressbar 
             value={100} 
             text={`${totalStages}`} 
@@ -63,7 +93,7 @@ function Dashboard({ tasks = [] }) {
           />
         </div>
         <div className="progress-bar">
-          <h3>Work in Pending</h3>
+          <h3>Pending <br/>Works</h3>
           <CircularProgressbar 
             value={pendingPercentage} 
             text={`${pendingPercentage.toFixed(2)}%`} 
@@ -113,37 +143,21 @@ function Dashboard({ tasks = [] }) {
 
       <div className="bottom-section">
         <div className="event-box">
-          <h3>Event Details</h3>
-          <p>No upcoming events</p>
-        </div>
-        <div className="tips-and-tricks">
-          <h3></h3>
-          <ul>
-            <li>.</li>
-            <li>.</li>
-            <li>.</li>
-            <li>.</li>
-            <li>.</li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bottom-section">
-        <div className="task-list">
-          <h3>Upcoming Tasks</h3>
+          <h3>Achievments</h3>
           <ul>
             {upcomingTasks.map(task => (
               <li key={task.id}>{task.title}</li>
             ))}
           </ul>
         </div>
-        <div className="recent-activity">
-          <h3>Recent Activity</h3>
+        <div className="tips-and-tricks">
+          <h3>Collabration</h3>
           <ul>
-            {recentActivity.map(task => (
-              <li key={task.id}>{task.title} - Completed</li>
-            ))}
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
           </ul>
         </div>
       </div>

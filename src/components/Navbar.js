@@ -62,13 +62,12 @@ const Navbar = () => {
                 <Link to="/notifications">
                     <FontAwesomeIcon icon={faBell} className="icon" />
                 </Link>
-                <Link to="/feedbackform">
+                <Link to="/community">
                     <FontAwesomeIcon icon={faComments} className="icon" />
                 </Link>
-                <Link to="/community">
-                    <FontAwesomeIcon icon={faUser} className="icon" />
-                </Link>
-                
+                <button onClick={() => window.location.href = '/feedbackform'} className="feedback-button">
+  Feedback
+</button>
             </div>
         </nav>
     );

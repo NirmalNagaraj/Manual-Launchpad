@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -21,8 +23,9 @@ const CalendarPage = () => {
   };
 
   return (
+    <div className="body-calendar">
     <div className="calendar-page">
-      <h1 className="header">The Events</h1>
+      <h1 className="header">Event Schedule</h1>
       <div className="content">
         <div className="calendar-sidebar">
           <Calendar
@@ -41,31 +44,35 @@ const CalendarPage = () => {
         <div className="event-details-container">
           <div className="buttons-container">
             <Link to="/upcoming-events" className="events-button">Upcoming Events</Link>
-            <Link to="/past-events" className="events-button">View All Past Events</Link>
+            <Link to="/past-events" className="events-button">Past Events</Link>
+            <Link to="/host-event" className="events-button">Host Event</Link>
           </div>
           <div className="events-content">
             <h2 className="section-header">Upcoming Events</h2>
-            <p>No Events, Visit us Later</p>
+            {selectedEvent ? (
+              <div className="event-detail">
+                <h3>{selectedEvent.title}</h3>
+                <p>{selectedDate.toDateString()}</p>
+              </div>
+            ) : (
+              <p>No Events, Visit Us Later</p>
+            )}
             <h2 className="section-header">Past Events</h2>
             <div className="past-events">
-              <div className="event-item">
-                <img src="path/to/dummy/image1.jpg" alt="Event 1" />
-                <div>
-                  <h3>Event 1</h3>
-                  <p>2024-05-11</p>
+              {events.map((event, index) => (
+                <div className="event-item" key={index}>
+                  <img src="https://via.placeholder.com/150" alt={`Event ${index + 1}`} />
+                  <div>
+                    <h3>{event.title}</h3>
+                    <p>{event.date}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="event-item">
-                <img src="path/to/dummy/image2.jpg" alt="Event 2" />
-                <div>
-                  <h3>Event 2</h3>
-                  <p>2024-05-11</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
