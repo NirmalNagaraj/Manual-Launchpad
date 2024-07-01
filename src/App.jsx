@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SideMenu from './components/SideMenu/SideMenu';
+import SideMenu from './components/SideMenu/Index';
 import Dashboard from './pages/Dashboard';
 import Chatbot from './pages/Chatbot';
 import Files from './pages/Files/Index';
@@ -9,7 +9,7 @@ import Scheduler from './pages/Scheduler';
 import Tasks from './pages/Tasks';
 import Community from './pages/Community';
 import CustomerService from './pages/CustomerService';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar';
 import EditProfile from './pages/EditProfile';
 import Subscription from './pages/Subscription';
 import Notification from './pages/Notification';
