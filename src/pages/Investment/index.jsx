@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import './Investment.css';
-import investmentImage from '../assets/program_1.jpg';
+import investmentImage from '../../assets/program_1.jpg';
 
 const Investment = () => {
     const [showForm, setShowForm] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Tasks.css';
-import Levels from './Levels';
-import Dashboard from './Dashboard2';
+import Levels from '../../components/Levels/Levels';
+import Dashboard from '../../components/DashBoard2/Dashboard2';
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([

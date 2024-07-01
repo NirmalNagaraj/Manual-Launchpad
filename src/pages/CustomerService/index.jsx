@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import './CustomerService.css';
-import dummyImage from '../assets/appdevelopment.jpg';
+import dummyImage from '../../assets/appdevelopment.jpg';
 
 const CustomerServiceContent = ({ image, title, description }) => {
   return (
