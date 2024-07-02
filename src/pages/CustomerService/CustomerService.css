@@ -87,11 +87,11 @@
     padding: 20px;
   }
   
-  h2 {
+  /* h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-  }
+  } */
   
   .service-cards {
     display: flex;
@@ -166,7 +166,7 @@
     border-color: #007bff;
   }
   
-  button {
+  /* button {
     padding: 12px 20px;
     background-color: darkblue;
     color: white;
@@ -178,7 +178,7 @@
   
   button:hover {
     background-color: #0056b3;
-  }
+  } */
   
   .why-choose-us {
     margin-top: 40px;
