@@ -42,21 +42,6 @@
   border-radius: 5px;
 }
 
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #003366;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #003369d0;
-}
-
 .meeting-list {
   margin-top: 10px;
 }

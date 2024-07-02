@@ -23,7 +23,7 @@ const SideMenu = () => {
         <Link to="/tasks" className="sidebar-item" onClick={toggleSidebar}>
           <FaTasks className="icon" /> My Tasks
         </Link>
-        <Link to="/chatbot" className="sidebar-item" onClick={toggleSidebar}>
+        <Link to="/ai-assistant" className="sidebar-item" onClick={toggleSidebar}>
           <FaRobot className="icon" /> AI Chatbot
         </Link>
         <Link to="/calendarpage" className="sidebar-item" onClick={toggleSidebar}>
